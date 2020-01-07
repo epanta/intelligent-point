@@ -8,7 +8,6 @@ public class PasswordUtils {
     private static final Logger log = LoggerFactory.getLogger(PasswordUtils.class);
 
     public PasswordUtils() {
-
     }
 
     public static String generateCrypt(String password) {
