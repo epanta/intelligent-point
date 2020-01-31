@@ -12,6 +12,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -84,7 +87,7 @@ public class LaunchRepositoryTest {
     }
 
 /*    public void testFindLauchesByEmployeeIdPagable() {
-        PageRequest pageRequest = new PageRequest(0,10, Sort.sort());
+        PageRequest pageRequest = new PageRequest(0,10);
         Page<Launch> lauches = this.launchRepository.findByEmployeeId(employeeId, pageRequest);
 
         Assert.assertEquals(2, lauches.getTotalElements());

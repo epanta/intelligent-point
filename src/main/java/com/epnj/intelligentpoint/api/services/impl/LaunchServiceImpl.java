@@ -33,6 +33,6 @@ public class LaunchServiceImpl implements LaunchService {
     @Override
     public void remove(Long id) {
         log.info("Delete employee by id: {}", id);
-        this.launchRepository.delete(id);
+        this.launchRepository.deleteById(id);
     }
 }

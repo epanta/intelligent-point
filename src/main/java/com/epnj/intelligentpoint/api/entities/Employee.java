@@ -109,6 +109,11 @@ public class Employee implements Serializable {
         return lunchHours;
     }
 
+    @Transient
+    public Optional<Float> getLunchHoursOpt() {
+        return Optional.ofNullable(lunchHours);
+    }
+
     public void setLunchHours(Float lunchHours) {
         this.lunchHours = lunchHours;
     }
